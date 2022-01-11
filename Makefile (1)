@@ -1,0 +1,2 @@
+parser: parser.c decode.c loader.c
+	clang -g -o parser parser.c decode.c loader.c

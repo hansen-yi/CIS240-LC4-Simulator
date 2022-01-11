@@ -1,0 +1,8 @@
+trace: trace.c loader.c execute.c decode.c
+	clang -c loader.c
+	clang -c execute.c
+	clang -c decode.c
+	clang -Wall -o trace trace.c loader.o execute.o decode.o
+
+clean : 
+	rm trace *.o 
